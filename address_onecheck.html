@@ -14,7 +14,12 @@
 	<style>
 		.title_adress_h3 {
 			margin-top: 2%;
-			text-transform: capitalize;
+		}
+		.title_adress_h3:first-letter{
+			text-transform: uppercase;
+		}
+		.msresp_basket_header__desc{
+			text-transform:lowercase;
 		}
 		.customer__fileds1 {
 			width: 100%;
@@ -79,7 +84,7 @@
 			}
 
 			.msresp_payment__choose, .msresp_shipping__choose{
-				width:50% !important;;
+				width:50% !important;
 				margin:0 !important;
 			}
 
@@ -93,17 +98,17 @@
 			}
 
 			body .msresp_payment__description, body .msresp_shipping__description {
-				width: 46% !important;;
+				width: 44% !important;
 				margin-right: 0;
 			}
 
 
 			body .msresp_payment__choose, body .msresp_shipping__choose {
-				width: 50% !important;;
+				width: 50% !important;
 			}
 
 			body msresp_payment__cost, body .msresp_shipping__cost {
-				width: 49% !important;;
+				width: 49% !important;
 			}
 
 			.msresp_address_form__control label {
@@ -146,6 +151,11 @@
 			.total_sq .msresp_vat__label {
 				width: 50%;
 			}
+			#myshp_basket {
+				float: left;
+				width: 33.3%;
+				padding:10px 0 20px 20px;
+			}
 
 		}
 
@@ -171,15 +181,14 @@
 			float: left;
 		}
 
+		.myshp_button_prev:first-letter {
+			text-transform:uppercase;
+		}
+
 		.myshp_button_next, .myshp_button_register {
 			float: right;
 		}
 
-		#myshp_basket {
-			float: left;
-			width: 33.3%;
-			padding:10px 0 20px 20px;
-		}
 
 		.msresp_total__value {
 			text-align: right;
@@ -284,46 +293,47 @@
 				width: 82% !important;
 			}
 			.msresp_colist__description-qty {
-				width: 40 !important%;
+				width: 34% !important;
 				float: left;
-				text-align: right !important;
-				padding-right: 20px !important;
+				padding-right: 0 !important;
+				text-align: center !important;
+				padding-left: 0%;
 			}
 			.msresp_colist__total {
 				width: 16% !important;
 			}
 
 		}
-			
-			.msresp_address_form__control label {
-			    float: left;
-			    line-height: 12px;
-			    clear: right;
-			    text-align: left;
-			}
-			.msresp_address_form__control input[type="checkbox"]{
-				float:left;
-				clear: right;
-				margin-top: 6px;
-			}
 
-			.myshp_b_5418101520 .msresp_address_form__control input[type="checkbox"]{
-				clear:left;
-				margin-bottom: 5px;
-				margin-top:0 !important;
-			}
+		.msresp_address_form__control label {
+			float: left;
+			line-height: 12px;
+			clear: right;
+			text-align: left;
+		}
+		.msresp_address_form__control input[type="checkbox"]{
+			float:left;
+			clear: right;
+			margin-top: 6px;
+		}
 
-			.myshp_b_5418101514 input{
-				width:100%;				
-			}
+		.myshp_b_5418101525 .msresp_address_form__control input[type="checkbox"]{
+			clear:left;
+			margin-bottom: 5px;
+			margin-top:0 !important;
+		}
 
-			.myshp_b_40 input {
-				margin-top:0 !important;
-			}
+		.myshp_b_5418101526 input{
+			width:100%;				
+		}
 
-			.myshp_b_5418101520 > label {
-				margin-bottom:5px;
-			}
+		.myshp_b_40 input {
+			margin-top:0 !important;
+		}
+
+		.myshp_b_5418101525 > label {
+			margin-bottom:5px;
+		}
 
 		.msresp_colist__description {
 			margin-left:0 !important;
@@ -338,41 +348,195 @@
 		}
 
 		@media(min-width:768px){
-			.myshp_b_41, .myshp_b_27, .myshp_b_39, .myshp_b_3, .myshp_b_6, .myshp_b_5, .myshp_b_32, .myshp_b_0, .myshp_b_5418101503{
+			.myshp_b_41, .myshp_b_27, .myshp_b_39, .myshp_b_3, .myshp_b_6, .myshp_b_5, .myshp_b_32, .myshp_b_0, .myshp_b_5418101503, 
+			.myshp_d_127, .myshp_d_139, .myshp_b_38, .myshp_d_138 {
 				padding-right:0;
 			}
-			.myshp_b_27{
-			    width: 18%;
+			.myshp_b_27, .myshp_d_127, .myshp_b_38, .myshp_d_138 {
+				width: 17%;
 			}	
 
-			.myshp_b_39	{
-			    width: 32%;
+			.myshp_b_39, .myshp_d_139 {
+				width: 32%;
 			}	
 
-			.myshp_b_3, .myshp_b_0, .myshp_b_5418101503 {
+			.myshp_b_3, .myshp_d_103 {
 				width: 50%;
 			}
+
+			.myshp_b_0, .myshp_b_5418101503 {
+				width:100%;
+			}
+
 
 			.myshp_b_5, .myshp_b_32, .myshp_b_6 {
 				width: 33%;
 			}
+
+			.myshp_b_41 input, .myshp_d_141 input {
+				width:auto !important;
+			}
+		}
+		@media(max-width:768px){
+			.myshp_b_38 {
+				width: 48%;
+    			margin-right: 2%;
+			}
+			.myshp_b_39{
+				width: 48%;
+    			margin-left: 2%;
+			}
+			.myshp_b_6 {
+			    width: 48%;
+    			margin-right: 2%;
+    			max-height: 64px;
+			}
+			.myshp_b_5 {
+				width: 48%;
+    			margin-left: 2%;
+			}
+			
+			h3.title_adress_h3 {
+			    border-top: 2px solid #193176;
+    			padding-top: 20px;	
+				float: left;
+				width: 100%;
+			}
+
+			.myshp_checkout_address > h3.title_adress_h3 {
+				border:none;
+			}
+			#myshp-body .msresp_shipping__control{
+				margin-top: -2px !important;
+			}
+			.myshp_b_5418101524 {
+				margin-top: 20px;
+			}
+			.myshp_b_5418101524 > label {
+			    margin-bottom: 20px !important;
+			}
+
+			.myshp_b_5418101524 .msresp_address_form__control{
+				margin-bottom:20px;
+			}
+
+			.msresp_colist__description-qty{
+				width: auto;
+    			display: inline-block;
+    			margin-left: 10px;
+			}
+			.msresp_colist__description-info{
+				width: auto;
+    			display: inline-block;				
+			}
+
+			.myshp_b_5418101525 {
+				padding:10px 0;
+			}
+			
+			.myshp_b_40 {
+			    padding: 0px 0 10px;
+			}
+
 		}
 
 		.myshp_b_5418101518 label, 
 		.myshp_d_5418101521 label {
-		    margin:3px 5px 0 0 !important;
+			margin:3px 5px 0 0 !important;
 		}
 
 		.myshp_b_37 .msresp_address_form__control input,
 		.myshp_b_40 .msresp_address_form__control input {
-		    float: left;
+			float: left;
 		}
 		.myshp_b_37 .msresp_address_form__control label{
-		    width: 90% !important;
-    		line-height: 14px;
+			width: 90% !important;
+			line-height: 14px;
 		}
-		.myshp_b_5418101514 {display:none}
-	
+		.myshp_b_5418101526 {display:none}
+		.myshp_b_5418101526 label{display:none !important}
+		.msresp_vat__label:first-letter{
+			text-transform:uppercase;
+		}
+
+		#delivery_fields{
+			float:left;
+			width:100%;
+		}
+
+
+		#delivery_fields:before {
+			content: "Partnergegevens";
+			font-family: "Ayita",Arial,sans-serif!important;
+			font-weight: bold;
+			font-size: 1.8rem;
+			margin: 10px 0;
+			line-height: 1.2em;
+			text-rendering: optimizelegibility;
+			color: #193176;
+			display: block;
+			margin-top: 20px;
+		}
+
+		@media (min-width: 768px){
+			.msresp_basket_header__article {
+				width:54% !important;
+			}
+
+			.msresp_colist__description-info{
+				width: 65%;
+				margin-right: 0;
+				float: left;
+				padding-right: 0;
+			}
+		}
+
+		.myshp_b_5418101524 label{
+		    width: 90% !important;
+	 		line-height: 14px !important;
+    		margin-top: 6px !important;
+		}
+
+		.msresp_payment__control, .msresp_shipping__control{
+			width: 7% !important;
+		}
+
+		 .msresp_shipping__control{
+		 	margin-top: 4px !important
+		 }
+
+		.ui-helper-hidden-accessible {
+			z-index: 500 !important;
+		}
+
+		body .msresp_shipping__cost {
+			text-transform:capitalize;
+		}
+
+		.msresp_payment__description, .msresp_shipping__description{
+			width:auto !important;
+		}
+
+
+		.myshp_b_5418101503 .error_mssg{
+		    float: left;
+		    width: 97%;
+		    background: #ffedee;
+		    color: red;
+		    font-size: 13px;
+		    padding: 2px 8px;
+		    border: #f1cad1 1px solid;
+    	}
+
+    	.myshp_b_5418101524 span {
+		    line-height: 18px;
+    	}
+
+    	@media(max-width:768px){    		
+			.myshp_b_5418101503 .error_mssg{
+				width:100%;
+			}
+    	}
 	</style>
 
 	<!-- basket                                                                                                                   -->
@@ -382,13 +546,13 @@
 
 		<div class="myshp_checkout_container">
 
-			<!-- Begin - Checkout Header -->
+			<!-- Begin - Checkout Header 
 			<h2>
 				<span style="myshop-resource:title.address">
 					Adres
 				</span>
 			</h2>
-			<!-- End - Checkout Header -->
+			End - Checkout Header -->
 
 		</div>
 	</div>
@@ -414,23 +578,28 @@
 	<div class="myshp_checkout myshp_checkout_address">
 
 		<!-- Begin - Customerdata Shipping -->
-		<h3 class="title_adress_h3"><span style="myshop-resource:address.invoice">Factuuradres</span></h3>
+		<h3 class="title_adress_h3"><span>Persoonlijke gegevens</span></h3>
 
 		<div class="msresp_address_form">
-			<span style="myshop-repeat:customer-fields" class="customer__fileds1 myshp_{$FieldName}"> <span style="myshop-is:checkout-address-field">
-				<div style="myshop-not-is:read-only-user-info">
-					<label> 
-						<span style="myshop-value:label"> &nbsp; </span> 
-						<span class="myshp_required_label" style="myshop-is:required-field"> * </span>
-						<span class="" style="myshop-not-is:required-field">&nbsp;&nbsp;</span> 
-					</label>
-				</div> <span style="myshop-is:read-only-user-info">
-				<br />
-				<span class="msresp_address_form__label-noform"
-				style="myshop-value:label"> </span>:&nbsp; </span> <span class="msresp_address_form__control" style="myshop-value:control"
-				>&nbsp; </span> </span> </span>
+			<span style="myshop-repeat:customer-fields" class="customer__fileds1 myshp_{$FieldName}"> 
+				<span style="myshop-is:checkout-address-field">
+					<div style="myshop-not-is:read-only-user-info">
+						<label> 
+							<span style="myshop-value:label"> &nbsp; </span> 
+							<span class="myshp_required_label" style="myshop-is:required-field"> * </span>
+							<span class="" style="myshop-not-is:required-field">&nbsp;&nbsp;</span> 
+						</label>
+					</div> 
+					<span style="myshop-is:read-only-user-info">
+						<br />
+						<span class="msresp_address_form__label-noform" style="myshop-value:label"> </span>:&nbsp; 
+					</span> 
+					<span class="msresp_address_form__control" style="myshop-value:control">&nbsp; </span> 
+				</span> 
+			</span>
 
-				<span style="myshop-is:register-new-user"> <label> <span style="myshop-resource:password1">Wachtwoord</span> <span class="">*</span> </label>
+			<span style="myshop-is:register-new-user"> 
+				<label> <span style="myshop-resource:password1">Wachtwoord</span> <span class="">*</span> </label>
 				<input type="password" style="myshop-control:password-new1" />
 				<label> <span style="myshop-resource:password2">Wachtwoord</span> <span class="">*</span> </label>
 				<input type="password" style="myshop-control:password-new2" />
@@ -441,7 +610,7 @@
 
 		<!-- Begin - Customerdata Delivery -->
 		<br/>
-		<div class="" style="myshop-has:delivery-fields">
+		<div class="">
 			<!--h3 class="title_adress_h3"><span style="myshop-resource:address.delivery">Afleveradres</span></h3-->
 			<div class="msresp_address_form" style="myshop-block:delivery-selection;">
 				<span style="myshop-repeat:customer-fields-delivery" class="customer__fileds1 myshp_{$FieldName}"> 
@@ -452,14 +621,14 @@
 					</label> 
 					<span class="msresp_address_form__control" style="myshop-value:control"></span> 
 				</span>
-
+					
 				<div style="myshop-is:read-only-user-info">
 					&nbsp;
 				</div>
 			</div>
 		</div>
 
-			<div class="" style="myshop-value:delivery-selection-control;"></div>
+		<div class="" style="myshop-value:delivery-selection-control;"></div>
 		<!-- Begin - Checkout Info -->
 		<div class="" style="myshop-resource:required.fields">
 			De velden met een * zijn
@@ -476,12 +645,12 @@
 			<h3 class="title_adress_h3"><span style="myshop-resource:button.deliverymethod"> Leverwijze </span></h3>
 			<!-- Begin - Checkout Shipping Data -->
 			<div class="msresp_shipping">
-				<div class="msresp_shipping__choose">
-					<strong> <span style="myshop-resource:shipping">Kies hier uw
+				<div class="msresp_shipping__choose hidden-xs">
+					<strong style="visibility:hidden"> <span style="myshop-resource:shipping;">Kies hier uw
 						verzendmethode</span> </strong>
-					</div>
+					</div>	
 					<div class="msresp_shipping__cost hidden-xs">
-						<strong> <span style="myshop-resource:shippingcost">Verzendkosten</span> </strong>
+						<strong> <span style="myshop-resource:shippingcost;text-transform:capitalize">Verzendkosten</span> </strong>
 					</div>
 				</div>
 
@@ -647,10 +816,7 @@
 							<h3 class="title_adress_h3"><span style="myshop-resource:check.approval"> Winkelwagen </span></h3>
 							<div class="msresp_basket_header hidden-xs">
 								<div class="msresp_basket_header__article">
-									<span style="myshop-resource:article">Artikel</span>
-								</div>
-								<div class="msresp_basket_header__desc">
-									<span style="myshop-resource:desc">Omschrijving</span>
+									<span>Artikel omschrijving</span>
 								</div>
 								<div class="msresp_basket_header__qty">
 									<span style="myshop-resource:nr">Aantal</span>
@@ -903,7 +1069,6 @@
 
 
 						$(".myshp_b_40").appendTo(".total_sq");
-						$(".myshp_b_37").appendTo(".total_sq");
 						$(".myshp_control_buttons").appendTo(".total_sq");
 
 					});
@@ -913,49 +1078,198 @@
 				<!-- End - Customerdata Delivery -->
 				<script type="text/javascript">
 					$(function(){
-						$('select[name="b_5418101519"]').on('change', function(){
-						    var selectedVal = $(this).val();
-						    switch(selectedVal){
-						        case 'Samenwonend':
-						            $("#bb").click();
-						        break;
-						        case 'Samenwonend met kinderen':
-						            $("#bb").click();
-						        break;
-						        case 'Alleenstaand':
-						            $("#ba").click();
-						        break;
-						    }
+						$('select[name="b_5418101523"]').on('change', function(){
+							var selectedVal = $(this).val();
+							switch(selectedVal){
+								case 'Samenwonend':
+								$("#bb").click();
+								break;
+								case 'Samenwonend met kinderen':
+								$("#bb").click();
+								break;
+								case 'Alleenstaand':
+								$("#ba").click();
+								break;
+								case 'Vul uw partnergegevens in':
+								$("#ba").click();
+								break;
+							}
 						});
-						var selectVal2 = $('select[name="b_5418101519"] option:selected').val();
+						var selectVal2 = $('select[name="b_5418101523"] option:selected').val();
 						if(selectVal2 === "Samenwonend" || selectVal2 === "Samenwonend met kinderen" ){
-				            $("#bb").click();
+							$("#bb").click();
 						}
 
-						$("#delivery_fields").insertAfter(".myshp_b_5418101519");
+						$("#delivery_fields").insertAfter(".myshp_b_5418101523");
 
 						$(".myshp_b_5418101518 label.myshp_checkout_value").eq(0).html('<i class="icon icon-male"></i>');
 						$(".myshp_b_5418101518 label.myshp_checkout_value").eq(1).html('<i class="icon icon-female"></i>');	
 						$(".myshp_d_5418101521 label.myshp_checkout_value").eq(0).html('<i class="icon icon-male"></i>');
 						$(".myshp_d_5418101521 label.myshp_checkout_value").eq(1).html('<i class="icon icon-female"></i>');	
 
-						$(".myshp_b_5418101520, .myshp_b_5418101514").insertBefore(".myshp_b_40");
+						$(".myshp_b_5418101525, .myshp_b_5418101526").insertBefore(".myshp_b_40");
 
-					    $(".myshp_b_5418101520 input#id54181015208").on('change', function(){
-					        if($(this).is(":checked")) {
-					             $(".myshp_b_5418101514").show("slow");	
-					        } else {
-					        	$(".myshp_b_5418101514").hide("slow")
-					        }
-					    });
+						$(".myshp_b_5418101525 input#id54181015258").on('change', function(){
+							if($(this).is(":checked")) {
+								$(".myshp_b_5418101526").show("slow");	
+							} else {
+								$(".myshp_b_5418101526").hide("slow")
+							}
+						});
 
-					    if ($(".myshp_b_5418101520 input#id54181015208").is(":checked")){
-					        $(".myshp_b_5418101514").show("slow");						    	
-					    }
+						if ($(".myshp_b_5418101525 input#id54181015258").is(":checked")){
+							$(".myshp_b_5418101526").show("slow");						    	
+						}
+
+						$(".myshp_b_5418101524").appendTo(".myshp_checkout_payment");
 					})
 
 				</script>
 				<link href="https://www.mijnwinkel.nl/skins/responsive_master/css/bolletje-resp.css" rel="stylesheet"/>
+
+				<script type="text/javascript">
+					$(window).load(function() {
+						var label, labels, deliverylabel;
+						var deliverylabels = " Partnergegevens: ";
+						var cont_error = 0;
+
+
+						$('.myshp_b_5418101503 input, .myshp_b_0 input').on('keyup', function(){
+							if ($('input[name="b_5418101503"]').val() != $('input[name="b_0"]').val()) {
+								$("input[name='b_5418101503']").css("border","1px solid #f1cad1");
+								$("input[name='b_0']").css("border","1px solid #f1cad1");
+								$("input[name='b_5418101503']").css("background","#ffedee");
+								$("input[name='b_0']").css("background","#ffedee");
+								if(cont_error === 0){
+									$(".myshp_b_5418101503").append('<div class="error_mssg">E-mail en bevestigen zijn niet gelijk</div>');
+									cont_error = 1;
+								}
+							} if($('input[name="b_5418101503"]').val() === $('input[name="b_0"]').val()){
+								$(".error_mssg").hide();
+								cont_error = 0; 
+								$("input[name='b_5418101503']").css("border","1px solid #C0C0C0");
+								$("input[name='b_0']").css("border","1px solid #C0C0C0");
+								$("input[name='b_5418101503']").css("background","#fff");
+								$("input[name='b_0']").css("background","#fff");
+								return cont_error;
+
+							}
+						});
+
+						$('.customer__fileds1').each(function() {
+							if ($(this).find(".myshp_required_label").length > 0){
+								$(this).addClass("require_field")
+							}
+						});
+
+						myshopEvent().onNext(function() {
+							var cont = true;
+							var cont2 = true;
+											
+							$('.myshp_checkout > .msresp_address_form > .customer__fileds1.require_field').each(function() {		
+								if("" === $(this).find('input[type="text"]').val()) {
+									label = $(this).find("label span").text();		
+									labels = labels + " " + label;
+									cont = false;
+								} 
+							});
+
+							$('.myshp_b_5418101518.require_field').each(function() {
+								if ($(this).find('input[type="checkbox"]').is(":checked")) {
+								} else {
+									label = $(this).find("label span").text();	
+									labels = labels + " " + label;
+									$('.myshp_b_5418101518 input[type="checkbox"]').focus();
+									cont = false;
+								}
+							});
+
+
+							$('.myshp_b_5418101525.require_field').each(function() {
+								if ($(this).find('input[type="checkbox"]').is(":checked")) {
+								} else {
+									label = $(this).find("label span").text();	
+									labels = labels + " " + label;
+									$(".myshp_b_5418101525 input").focus();
+									cont = false;
+								}
+							});
+
+
+							$('.myshp_b_40.require_field').each(function() {
+								if ($(this).find('input[type="checkbox"]').is(":checked")) {
+								} else {
+									label = $(this).find("label span").text();	
+									labels = labels + " " + label;
+									$('.myshp_b_40 input[type="checkbox"]').focus();
+									cont = false;
+								}
+							});
+
+							$('.myshp_b_5418101524.require_field').each(function() {
+								if ($(this).find('input[type="checkbox"]').is(":checked")) {
+								} else {
+									label = $(this).find("label span").text();	
+									labels = labels + " " + label;
+									$('.myshp_b_5418101524 input[type="checkbox"]').focus();
+									cont = false;
+								}
+							});
+
+							$('.myshp_b_5418101523.require_field').each(function() {
+								if($(this).find("select[name='b_5418101523'] option[value='Vul uw partnergegevens in']").is(':selected')){								
+									label = $(this).find("label span").text();
+									labels = labels + " " + label;
+									$(this).focus(); 
+									cont = false;
+
+								}
+							});
+
+							if ($('input[name="b_5418101503"]').val() != $('input[name="b_0"]').val()) {
+								labels = labels + " " + "E-mail en bevestigen zijn niet gelijk";
+								cont = false;
+							} 
+
+							if($("#delivery_fields:visible").is(':visible')){	
+
+								$('#delivery_fields .msresp_address_form > .customer__fileds1.require_field').each(function() {	
+									if("" === $(this).find('input[type="text"]').val()) {	
+										deliverylabel = $(this).find("label span").text();	
+										deliverylabels = deliverylabels + " " + deliverylabel;	
+										$(this).focus(); 
+										cont = false;
+									} 
+								});
+
+								$('.myshp_b_5418101518.require_field').each(function() {
+									if ($(this).find('input[type="checkbox"]').is(":checked")) {
+									} else {
+										label = $(this).find("label span").text();	
+										labels = labels + " " + label;
+										$('.myshp_b_5418101518 input[type="checkbox"]').focus();
+										cont = false;
+									}
+								});
+
+							} 
+	
+
+
+							if (!cont) 
+								alert("Er moet een waarde ingevuld worden voor het veld: " + labels + ". " + deliverylabels );
+								deliverylabels = " Partnergegevens: ";
+								labels = "";
+								myshopEvent().clearLock();
+							return cont;
+
+						});
+
+
+
+
+					})
+				</script>
 			</body>
 			</html>
 

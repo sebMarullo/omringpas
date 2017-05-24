@@ -404,7 +404,6 @@
 		<script type="text/javascript" src="/skins/responsive_master/js/jquery.flexnav.min.js"></script>
 		<script src="/skins/responsive_master/js/app.js?v=92" async="async"></script>
 		<script src="/views/library/jquery/plugins/jquery.plugins.js" async="async"></script>
-		<script src="/views/library/lib_datepicker/js/bootstrap-datepicker.js"></script>	
 		<!--<script src="//userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/2b21543eea3a974f899ad2904a14083d008b8a27a88e5ad12371216499e5ee24.js"></script>-->
 		<!--<script src="/skins/modena/scripts/skin.js" async="async"></script>-->
 
@@ -429,6 +428,7 @@
 			    clip: inherit;
 			}
 		</style>
+		<script src="https://myshop.s3-external-3.amazonaws.com/shop5418100.images.datepicker-nl.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 				function datePickerSelect(){
 					if ($("input[name='b_41']")){
@@ -436,6 +436,9 @@
 							autoclose: true,
 							format: "dd/mm/yyyy",
 							keyboardNavigation:true,
+							changeMonth:true,
+							changeYear:true,
+							yearRange: "1950:2012"
 						});
 					}
 					if ($("input[name='d_141']")){
@@ -443,6 +446,9 @@
 							autoclose: true,
 							format: "dd/mm/yyyy",
 							keyboardNavigation:true,
+							changeMonth:true,
+							changeYear:true,
+							yearRange: "1950:2012"
 						});
 					}
 
