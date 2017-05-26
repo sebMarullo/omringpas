@@ -12,6 +12,19 @@
 			.myshp_checkout_confirmation .myshp_checkout_block_box ul, .myshp_checkout_approval .myshp_checkout_block_box ul {
 				padding-left:0;
 			}
+
+			@media (min-width: 1024px){
+				.myshp_checkout_block .myshp_checkout_block_box { 
+					padding-left:0;
+				}
+			}
+			
+			.myshp_checkout_customerdata_field a[href="voorwaarden"] {
+				color:#ed7000;				
+			}
+			.myshp_checkout_customerdata_field a:hover{
+				color:#813f03;
+			} 
 		</style>
         <div class="myshp_checkout myshp_checkout_confirmation">
             
@@ -265,6 +278,11 @@
 			            <tr>
 			                <td class="myshp_checkout_block_box">
 			                    <div class="myshp_block">
+								</div>
+			                </td>
+							<td width="1%">&nbsp;</td>
+			                <td class="myshp_checkout_block_box">
+			                    <div class="myshp_block">
 									<h3>
 			                            <span style="myshop-resource:shippingmethod.capital">
 			                                Leverwijze
@@ -286,24 +304,11 @@
 			                        </div>
 								</div>
 			                </td>
-							<td width="1%">&nbsp;</td>
-			                <td class="myshp_checkout_block_box">
-			                    <div class="myshp_block">
-									<h3>
-			                            <span style="myshop-resource:email">
-			                                E-mail
-			                            </span>
-			                        </h3>
-			                        <div class="myshp_box">
-			                            <!--<label class="myshp_checkout_customerdata_label"><span style="myshop-value:label">&nbsp;</span></label>-->
-			                            <span class="myshp_checkout_customerdata_field" style="myshop-value:customer-field-email">
-			                                &nbsp;
-			                            </span>
-			                        </div>
-								</div>
-			                </td>
 			            </tr>
 			            <tr>
+			                <td class="myshp_checkout_block_box">
+			                </td>
+							<td width="1%">&nbsp;</td>
 			                <td class="myshp_checkout_block_box">
 			                    <div class="myshp_block">
 									<h3>
@@ -326,6 +331,30 @@
 			                        </div>
 								</div>
 			                </td>
+						</tr>
+			            <tr>
+			                <td class="myshp_checkout_block_box">
+			                </td>
+							<td width="1%">&nbsp;</td>
+			                <td class="myshp_checkout_block_box">
+			                    <div class="myshp_block">
+									<h3>
+			                            <span style="myshop-resource:email">
+			                                E-mail
+			                            </span>
+			                        </h3>
+			                        <div class="myshp_box">
+			                            <!--<label class="myshp_checkout_customerdata_label"><span style="myshop-value:label">&nbsp;</span></label>-->
+			                            <span class="myshp_checkout_customerdata_field" style="myshop-value:customer-field-email">
+			                                &nbsp;
+			                            </span>
+			                        </div>
+								</div>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td class="myshp_checkout_block_box">
+			                </td>
 							<td width="1%">&nbsp;</td>
 			                <td class="myshp_checkout_block_box">
 			                    <div class="myshp_block">
@@ -340,7 +369,7 @@
 			                        </div>
 								</div>
 			                </td>
-						</tr>
+			            </tr>
 		            </table>
 				</div>	
 				<!-- End - Customer Data -->
@@ -367,5 +396,16 @@
 			<!-- End - MijnWinkel PoweredBy Block -->
 			
         </div>
+        <script type="text/javascript">
+        	$(function() {
+        	    $(".myshp_box ul li").each(function(){
+	        		var compareText = $(this).find(".myshp_checkout_customerdata_field").text();
+	        		if(compareText == "Ik machtig Omring om jaarlijks, tot wederopzegging, het aanschafbedrag af te schrijven. "){
+		        		$(this).find(".myshp_checkout_customerdata_field").css("display", "block");
+	    	    	}
+        		});
+        	})
+
+        </script>
     </body>
 </html>
