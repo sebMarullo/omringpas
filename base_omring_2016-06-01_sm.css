@@ -3897,3 +3897,24 @@ content: 'c';
 	width:100%;
 }
 
+
+.icon.icon-male:before, .icon.icon-female:before {
+	display:none;
+}
+
+.icon.icon-male, .icon.icon-female{
+    background-repeat: no-repeat;
+    display: block;
+    width: 18px;
+    height: 23px;
+    background-size: cover;
+    margin-right:10px;
+}
+
+.icon.icon-male{
+	background-image:url("https://myshop.s3-external-3.amazonaws.com/shop5418100.images.Icoon-man_thumb_sm.png");
+}
+
+.icon.icon-female {
+	background-image:url("https://myshop.s3-external-3.amazonaws.com/shop5418100.images.Icoon-vrouw_thumb_sm.png");
+}
