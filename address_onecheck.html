@@ -1078,7 +1078,7 @@
 				<!-- End - Customerdata Delivery -->
 				<script type="text/javascript">
 					$(function(){
-						$('select[name="b_5418101523"]').on('change', function(){
+						$('select[name="b_5418101530"]').on('change', function(){
 							var selectedVal = $(this).val();
 							switch(selectedVal){
 								case 'Samenwonend':
@@ -1095,12 +1095,12 @@
 								break;
 							}
 						});
-						var selectVal2 = $('select[name="b_5418101523"] option:selected').val();
+						var selectVal2 = $('select[name="b_5418101530"] option:selected').val();
 						if(selectVal2 === "Samenwonend" || selectVal2 === "Samenwonend met kinderen" ){
 							$("#bb").click();
 						}
 
-						$("#delivery_fields").insertAfter(".myshp_b_5418101523");
+						$("#delivery_fields").insertAfter(".myshp_b_5418101530");
 
 						$(".myshp_b_5418101527 label.myshp_checkout_value").eq(0).html('<i class="icon icon-male"></i>');
 						$(".myshp_b_5418101527 label.myshp_checkout_value").eq(1).html('<i class="icon icon-female"></i>');	
@@ -1216,8 +1216,8 @@
 								}
 							});
 
-							$('.myshp_b_5418101523.require_field').each(function() {
-								if($(this).find("select[name='b_5418101523'] option[value='Vul uw partnergegevens in']").is(':selected')){								
+							$('.myshp_b_5418101530.require_field').each(function() {
+								if($(this).find("select[name='b_5418101530'] option[value='Vul uw partnergegevens in']").is(':selected')){								
 									label = $(this).find("label span").text();
 									labels = labels + " " + label;
 									$(this).focus(); 
@@ -1265,7 +1265,7 @@
 
 						});
 
-
+						$(".myshp_d_138 > label > span:first-child").text("Initialen:");
 
 
 					})

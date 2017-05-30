@@ -460,5 +460,16 @@
 				datePickerSelect();
 
 		</script>
+        <script type="text/javascript">
+	        	$(function() {
+	        	    $(".myshp_box ul li").each(function(){
+		        		var compareText = $(this).find(".myshp_checkout_customerdata_field").text();
+		        		if(compareText == "Ik machtig Omring om jaarlijks, tot wederopzegging, het aanschafbedrag af te schrijven. "){
+			        		$(this).find(".myshp_checkout_customerdata_field").css("display", "block");
+		    	    	}
+	        		});
+	        	})
+
+        </script>
 	</body>
 	</html>
